@@ -3,6 +3,9 @@
 \usepackage{glossaries}
 \usepackage[usenames, dvipsnames]{color}
 
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
 \makeglossaries
 
 \newglossaryentry{latex}
@@ -24,6 +27,10 @@
 
 \begin{document}
 	\maketitle
+	
+	\clearpage
+	
+	\begin{multicols}{2}
 	
 	\textbf{8th of March 2018}\\\\
 	\textcolor{red}{der Bekannter} the well-known\\
@@ -177,9 +184,8 @@
 	
 	
 	
-	
-	\clearpage
-	
+	\end{multicols}
+
 	\printglossaries
 	
 \end{document}
